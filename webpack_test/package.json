@@ -1,0 +1,30 @@
+{
+  "name": "webpack_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --inline --open --hot",
+    "build" : "webpack -p --config webpack.config.much.js",
+    "much" : "webpack-dev-server --inline --open --hot --config webpack.config.much.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.26.0",
+    "html-withimg-loader": "^0.1.16",
+    "json-loader": "^0.5.4",
+    "jsx-loader": "^0.13.2",
+    "n-zepto": "^1.2.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-zepto": "0.0.1",
+    "zepto": "^1.2.0"
+  }
+}

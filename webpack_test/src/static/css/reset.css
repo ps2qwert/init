@@ -1,0 +1,31 @@
+/*css 初始化*/
+body,nav,dl,dt,dd,p,h1,h2,h3,h4,ul,ol,li,input,button,textarea,footer{margin:0;padding:0}
+html{font:10px 'Helvetica;';  color:#333; height: 100%; }
+@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+@media screen and (min-width:800px){html{font-size:25px}}
+body{background:#fff;-webkit-text-size-adjust: none; min-width:320px; height: 100%}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+form{display:inline}
+ul,ol{list-style:none}
+a{text-decoration:none;color:#FFF}
+a:hover, a:active, a:focus{color:#fff;text-decoration: none;}
+a:active{color:#aaa;}
+img{vertical-align:middle;border:0;-ms-interpolation-mode:bicubic; max-width: 100%}
+textarea{resize:none}
+button::-moz-focus-inner,input::-moz-focus-inner { padding:0; border:0}
+table { border-collapse:collapse; border-spacing:0}
+a,button,input,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0;); }
+.fl{float:left;}.fr{float:right;}.hide{display:none;}.show{display: block;}
+.ellipsis { white-space:nowrap; text-overflow:ellipsis; overflow:hidden}
+.break { word-break:break-all; word-wrap:break-word}
+header, footer, article, section, nav, menu, hgroup {display: block;clear:all;}
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+.clearfloat{zoom:1} 
+
+/*css 初始化*/
+.clear{clear:both;}
