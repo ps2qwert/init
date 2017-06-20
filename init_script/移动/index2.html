@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<style> 
+#eraseImg{ /*橡皮样式*//**/ 
+border:solid; 
+color:gray; 
+border-radius: 118px; 
+width: 5px; 
+height: 5px; 
+position: absolute; 
+display: none; 
+
+} 
+.eraseSeries{ /*橡皮大小单选按钮组的排列，此div不单独占一行*/ 
+display: inline-block; 
+} 
+
+</style> 
+</head>
+<body>
+
+<!--<button id="btn">btn</button>--> 
+<canvas id="myCanvas" width="600" height="400"></canvas> <!--整个画布--> 
+
+
+<script src="js/jquery.min.js"></script> 
+<script> 
+
+// var c; //获取到的2d画板 
+// var painting = false; //判断是否正在绘画，即鼠标左键是否长按下去 
+// var canvas; //画板 
+// $(function() {
+
+// 	canvas = document.getElementById("myCanvas");
+// 	c = canvas.getContext("2d");
+// 	var img=new Image()
+// 	img.src="foot_1.png"
+// 	c.drawImage(img,0,0);
+
+
+
+// });
+
+
+function drawBeauty(beauty){
+	var mycv = document.getElementById("myCanvas");  
+	var myctx = mycv.getContext("2d");
+	myctx.drawImage(beauty, 0, 0,mycv.width,mycv.height);
+	saveImageInfo();
+}
+function load(){
+	var beauty = new Image();  
+	beauty.src = "foot_1.png"; 
+
+	if(beauty.complete){
+	   drawBeauty(beauty);
+	}else{
+	   beauty.onload = function(){
+	     drawBeauty(beauty);
+	   };
+	   beauty.onerror = function(){
+	     window.alert('美女加载失败，请重试');
+	   };
+	};   
+}//load
+
+
+(function(){
+	alert(x+ y);
+})(2,3)
+
+function saveImageInfo (){  
+                canvas = document.getElementById("myCanvas");
+                var image    =  canvas.toDataURL("image/png");  
+                var w=window.open('about:blank','image from canvas');  
+                w.document.write("<img src='"+image+"' alt='from canvas'/>");  
+} 
+
+
+if (document.all) {
+	window.attachEvent('onload', load);  
+}else {  
+	window.addEventListener('load', load, false);
+}
+
+
+</script> 
+</body>
+
+</html>
