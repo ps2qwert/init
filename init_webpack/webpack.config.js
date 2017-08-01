@@ -33,7 +33,7 @@ module.exports = {
     ],
     //入口文件输出配置
     output: {
-        path: __dirname + '/dist',
+        path: __dirname + '/build',
         // publicPath : "/dist/",
         filename: 'build.js'
     },
