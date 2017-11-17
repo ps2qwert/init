@@ -16,6 +16,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.11.2",
     "glob": "^7.1.2",
+    "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.26.0",
     "html-withimg-loader": "^0.1.16",
     "json-loader": "^0.5.4",
@@ -27,5 +28,8 @@
     "webpack-dev-server": "^1.16.2",
     "webpack-zepto": "0.0.1",
     "zepto": "^1.2.0"
+  },
+  "dependencies": {
+    "velocity-animate": "^1.5.0"
   }
 }

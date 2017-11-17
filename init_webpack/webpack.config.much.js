@@ -58,7 +58,6 @@ var config = {
     module: {
         //加载器配置
         loaders: [
-            // { test: /\.css$/, loader: 'style-loader!css-loader' },
             { 
                 test: /\.css$/, 
                 loader: ExtractTextPlugin.extract("style-loader", "css-loader")
@@ -71,10 +70,15 @@ var config = {
             // },
             {
                 test: /\.(png|jpg|gif|svg)$/,
-                loader: 'file-loader?limit=8192&name=images/[hash:8].[name].[ext]',
-                // options: {
-                //   name: 'images/[name].[ext]?[hash]'
-                // }
+                loader: 'file-loader?limit=8192&name=/images/[name]?v=[hash:8].[ext]',
+
+            },
+            {
+                test: /\.html$/,
+                loader: 'html',
+                query: {
+                  minimize: true
+                }
             },
             { test: /\.json$/, loader : "json"},
         ]

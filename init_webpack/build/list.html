@@ -1,27 +1,97 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no"/>
-	<title></title>
-<link href="css/style.css?21ee6ef024327ae8ab0a" rel="stylesheet"></head>
-<body>
-
-
-<div class="boxDom" id="boxDom">
-    <div class="idDom" id="idDom">
-        <div class="content">
-            <p class="title">吐槽:</p>
-            <input type="text" class="text" id="text" />
-            <button type="button" class="btn" id="btn">发射</button>
-        </div>
-    </div>
-    <span class="string velocity-animating" style="top: 523px; right: 545.325px; color: rgb(101, 213, 58);">
-    	<img src ="images/1.png" width="30" height="30"><span class="name">fffffffff</span>
-    </span>
-</div>
-
-<script type="text/javascript" src="js/vendors.js?21ee6ef024327ae8ab0a"></script><script type="text/javascript" src="js/list.js?21ee6ef024327ae8ab0a"></script></body>
-
-</html>
+<head><link href="css/style.css?296bd9e59e185f00cd97" rel="stylesheet"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Cannot resolve 'file' or 'directory' ./images/1.png i  n F:\init\init_webpack\src\app\list:
+  Error: Cannot resolve 'file' or 'directory' ./images/1.png in F:\init\init_web  pack\src\app\list
+  
+  - compiler.js:76 
+    [init_webpack]/[html-webpack-plugin]/lib/compiler.js:76:16
+  
+  - Compiler.js:214 Compiler.<anonymous>
+    [init_webpack]/[webpack]/lib/Compiler.js:214:10
+  
+  - Compiler.js:403 
+    [init_webpack]/[webpack]/lib/Compiler.js:403:12
+  
+  - Tapable.js:67 Compiler.next
+    [init_webpack]/[tapable]/lib/Tapable.js:67:11
+  
+  - CachePlugin.js:40 Compiler.<anonymous>
+    [init_webpack]/[webpack]/lib/CachePlugin.js:40:4
+  
+  - Tapable.js:71 Compiler.applyPluginsAsync
+    [init_webpack]/[tapable]/lib/Tapable.js:71:13
+  
+  - Compiler.js:400 Compiler.<anonymous>
+    [init_webpack]/[webpack]/lib/Compiler.js:400:9
+  
+  - Compilation.js:577 Compilation.<anonymous>
+    [init_webpack]/[webpack]/lib/Compilation.js:577:13
+  
+  - Tapable.js:60 Compilation.applyPluginsAsync
+    [init_webpack]/[tapable]/lib/Tapable.js:60:69
+  
+  - Compilation.js:572 Compilation.<anonymous>
+    [init_webpack]/[webpack]/lib/Compilation.js:572:10
+  
+  - Tapable.js:67 Compilation.next
+    [init_webpack]/[tapable]/lib/Tapable.js:67:11
+  
+  - UglifyJsPlugin.js:140 Compilation.<anonymous>
+    [init_webpack]/[webpack]/lib/optimize/UglifyJsPlugin.js:140:4
+  
+  - Tapable.js:71 Compilation.applyPluginsAsync
+    [init_webpack]/[tapable]/lib/Tapable.js:71:13
+  
+  - Compilation.js:567 Compilation.<anonymous>
+    [init_webpack]/[webpack]/lib/Compilation.js:567:9
+  
+  - Tapable.js:60 Compilation.applyPluginsAsync
+    [init_webpack]/[tapable]/lib/Tapable.js:60:69
+  
+  - Compilation.js:563 Compilation.<anonymous>
+    [init_webpack]/[webpack]/lib/Compilation.js:563:8
+  
+  - Tapable.js:60 Compilation.applyPluginsAsync
+    [init_webpack]/[tapable]/lib/Tapable.js:60:69
+  
+  - Compilation.js:525 Compilation.seal
+    [init_webpack]/[webpack]/lib/Compilation.js:525:7
+  
+  - Compiler.js:397 Compiler.<anonymous>
+    [init_webpack]/[webpack]/lib/Compiler.js:397:15
+  
+  - Tapable.js:103 
+    [init_webpack]/[tapable]/lib/Tapable.js:103:11
+  
+  - Compilation.js:445 Compilation.<anonymous>
+    [init_webpack]/[webpack]/lib/Compilation.js:445:10
+  
+  - Compilation.js:417 
+    [init_webpack]/[webpack]/lib/Compilation.js:417:12
+  
+  - Compilation.js:332 
+    [init_webpack]/[webpack]/lib/Compilation.js:332:10
+  
+  - async.js:52 
+    [init_webpack]/[async]/lib/async.js:52:16
+  
+  - async.js:246 done
+    [init_webpack]/[async]/lib/async.js:246:17
+  
+  - async.js:44 
+    [init_webpack]/[async]/lib/async.js:44:16
+  
+  - Compilation.js:202 errorAndCallback
+    [init_webpack]/[webpack]/lib/Compilation.js:202:5
+  
+  - Compilation.js:225 errorOrWarningAndCallback
+    [init_webpack]/[webpack]/lib/Compilation.js:225:13
+  
+  - Compilation.js:229 
+    [init_webpack]/[webpack]/lib/Compilation.js:229:12
+  
+  - NormalModuleFactory.js:29 onDoneResolving
+    [init_webpack]/[webpack]/lib/NormalModuleFactory.js:29:20
+  
+</pre><script type="text/javascript" src="js/vendors.js?296bd9e59e185f00cd97"></script><script type="text/javascript" src="js/list.js?296bd9e59e185f00cd97"></script>

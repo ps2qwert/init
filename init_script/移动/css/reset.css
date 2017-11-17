@@ -8,7 +8,7 @@ html{font:10px 'Helvetica;';  color:#333; height: 100%; }
 @media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
 @media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
 @media screen and (min-width:800px){html{font-size:25px}}
-body{background:#fff;-webkit-text-size-adjust: none; min-width:320px; height: 100%}
+body{background:#fff;-webkit-text-size-adjust: none; min-width:320px; height: 100%; max-width: 640px; margin:0 auto;}
 h1,h2,h3,h4,h5,h6{font-size:100%}
 form{display:inline}
 ul,ol{list-style:none}
@@ -18,18 +18,10 @@ a:active{color:#aaa;}
 img{vertical-align:middle;border:0;-ms-interpolation-mode:bicubic; max-width: 100%}
 textarea{resize:none}
 a,button,input,textarea{
-    -webkit-tap-highlight-color: rgba(0,0,0,0;)
-    -webkit-user-modify:read-write-plaintext-only; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0;);
+    -webkit-user-modify:read-write-plaintext-only
 }
-input[type=number]::-webkit-textfield-decoration-container {
-    background-color: transparent;    
-}
-input[type=number]::-webkit-inner-spin-button {
-     -webkit-appearance: none;
-}
-input[type=number]::-webkit-outer-spin-button {
-     -webkit-appearance: none;
-}
+
 input{-webkit-appearance:none;}
 table { border-collapse:collapse; border-spacing:0}
 .fl{float:left;}.fr{float:right;}.hide{display:none;}.show{display: block;}
