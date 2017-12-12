@@ -14,13 +14,13 @@ var config = {
               chunks: chunks,
               minChunks: chunks.length // 提取所有entry共同依赖的模块
             }),
-	new webpack.ProvidePlugin({
-	    $: 'n-zepto',
-	    Zepto: 'n-zepto',
-	    'window.Zepto': 'n-zepto',
-	    'window.$': 'n-zepto',
-	  }),
-	new ExtractTextPlugin("css/style.css"),
+        	new webpack.ProvidePlugin({
+        	    $: 'n-zepto',
+        	    Zepto: 'n-zepto',
+        	    'window.Zepto': 'n-zepto',
+        	    'window.$': 'n-zepto',
+        	  }),
+        	new ExtractTextPlugin("css/style.css"),
             new webpack.HotModuleReplacementPlugin(),
             // new HtmlWebpackPlugin({
             //       title: 'My App',
@@ -58,13 +58,19 @@ var config = {
     module: {
         //加载器配置
         loaders: [
-            { 
-                test: /\.css$/, 
-                loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract("style-loader","css-loader")
             },
             { test: /\.js$/, loader: 'jsx-loader?harmony' },
-            { test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
-            // { 
+            {
+                test:  /\.scss$/,
+                 loader:  "style!css!sass"
+            },
+                {
+                test:  /\.less$/,
+                 loader:  "style!css!less"
+            },            // { 
             //     test: /\.(png|jpg)$/, 
             //     loader: 'url?limit=10000&name=images/[hash:8].[name].[ext]'
             // },
