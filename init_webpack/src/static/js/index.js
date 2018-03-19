@@ -17,3 +17,20 @@ let obj = {
 	}
 		
 }
+
+var debounce = function(idle, action){
+  var last
+  return function(){
+    var ctx = this, args = arguments
+    clearTimeout(last)
+    last = setTimeout(function(){
+        action.apply(ctx, args)
+    }, idle)
+  }
+}
+
+let showNum = () => {
+	console.log("开始")
+}
+
+debounce(1000,showNum())

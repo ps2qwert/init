@@ -4,10 +4,40 @@ var $ = require("n-zepto");
 
 
 
-alert('2')
 let obj = {
 	birth : '1990'
 		
 }
+var n = 0
+var last
 
-console.log(obj);
+function throttle(method,context){
+	clearTimeout(method.tID);
+	method.tId = setTimeout(()=>{
+		method.call(context)
+	},1000)
+}
+
+var debounce = function(idle, action){
+  
+  return function(){
+    var ctx = this, args = arguments
+    clearTimeout(last)
+    last = setTimeout(function(){
+        action.apply(ctx, args)
+    }, idle)
+  }
+}
+
+let showNum = () => {
+	console.log(n)
+	n++
+}
+
+debounce(1000,showNum())
+
+
+$('#btn').on('click',function(){
+	var x = debounce(1000,showNum);
+	x()
+})
